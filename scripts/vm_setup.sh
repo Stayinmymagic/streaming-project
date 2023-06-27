@@ -1,6 +1,5 @@
-#執行vm_set_up.sh之前先執行echo ${PATH}, echo ${HOME}, echo $USER 查看初始化的值會是什麼
 #!/bin/bash
-
+#執行vm_set_up.sh之前先執行echo ${PATH}, echo ${HOME}, echo $USER 查看初始化的值會是什麼
 echo "Downloading anaconda..."
 wget "https://repo.anaconda.com/archive/Anaconda3-2021.11-Linux-x86_64.sh"
 
