@@ -20,7 +20,16 @@ spark = create_or_get_spark_session('Eventsim Stream')
 spark.streams.resetTerminated()
 
 # Read 
+listen_events = create_kafka_read_stream(
+    spark, KAFKA_ADDRESS, KAFKA_PORT, LISTEN_EVENTS_TOPIC
+)
+page_view_events = create_kafka_read_stream(
+    spark, KAFKA_ADDRESS, KAFKA_PORT, PAGE_VIEW_EVENTS_TOPIC
+)
+auth_events = create_kafka_read_stream(
+    spark, KAFKA_ADDRESS, KAFKA_PORT, AUTH_EVENTS_TOPIC
+)
 
 # Process
-
+def 
 # Write
